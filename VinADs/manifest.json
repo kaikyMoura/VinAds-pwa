@@ -1,0 +1,41 @@
+{
+    "theme_color": "#6487e0",
+    "background_color": "#f6f6f6",
+    "display": "standalone",
+    "scope": "https://vintage-ads.netlify.app",
+    "start_url": "https://vintage-ads.netlify.app",
+    "name": "Vintage Ads",
+    "short_name": "VinAds",
+    "description": "Image Gallery",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+
+        {
+            "src": "/images/icon01.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+
+
+    ]
+}
