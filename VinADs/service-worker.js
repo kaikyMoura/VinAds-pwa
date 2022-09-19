@@ -1,5 +1,16 @@
 var cacheName = 'pwaTeste+-v1.2';
 
+const enableNavigationPreload = async () => {
+  if (self.registration.navigationPreload) {
+    // Enable navigation preloads!
+    await self.registration.navigationPreload.enable();
+  }
+};
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil(enableNavigationPreload());
+});
+
 self.addEventListener('install', event => {
 
   self.skipWaiting();
@@ -55,8 +66,8 @@ self.addEventListener('fetch', function (event) {
      }
    }());
 
-  //Atualizacao cache
-  /*event.respondWith(
+   //Atualizacao cache
+  event.respondWith(
     caches.match(event.request)
       .then(function (response) {
         if (response) {
@@ -64,6 +75,5 @@ self.addEventListener('fetch', function (event) {
         }
         return fetch(event.request);
       })
-  );*/
-
+  );
 });
